@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #1f357c, #451a69);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+
+}
+
+.todo-app h2 {
+    color: #002765;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    
+}
+.todo-app h2 img{
+    width: 45px;
+    position: absolute;
+    margin-left: 150px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbd9db;
+    border-radius: 30px;
+    padding-left: 20px ;
+    margin-bottom: 25px;
+}
+.row input{
+    border: none;
+    flex: 1;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    font-weight: 700;
+}
+.row button{
+    border: none;
+    background-color: red;
+    outline: none;
+    padding: 10px 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 17px 8px 12px 50px;
+    font-size: 17px;
+    user-select: none;
+    position: relative;
+
+}
+ul li::before{
+    content: "";
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    background-image: url(images/unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+
+}
+.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+.checked::before{
+    background-image: url(images/checked.png);
+}
+span{
+    position: absolute;
+    right: 0;
+    top:10px ;
+    width: 40px;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    line-height: 30px;
+    color:#555;
+}
+span:hover{
+    background-color: #edeef0;
+}
